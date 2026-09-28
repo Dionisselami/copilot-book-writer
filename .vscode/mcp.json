@@ -1,0 +1,19 @@
+{
+  "inputs": [
+    {
+      "id": "proseify-key",
+      "type": "promptString",
+      "description": "Proseify API key",
+      "password": true
+    }
+  ],
+  "servers": {
+    "proseify": {
+      "type": "http",
+      "url": "https://mcp.proseify.xyz/mcp",
+      "headers": {
+        "Authorization": "Bearer ${input:proseify-key}"
+      }
+    }
+  }
+}
